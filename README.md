@@ -82,12 +82,12 @@ We're in Phase 1 — validating, challenging, and refining the primitive taxonom
 | 2. Pattern Definition | Reusable interaction patterns per zone | 10-12 weeks |
 | 3. Specification Draft | Formal versioned spec (JSON Schema / Protobuf) | 8 weeks |
 | 4. Reference Implementation | Working examples for common SaaS patterns | 12 weeks |
-| 5. Adoption & Ecosystem | Real-world pilots + community growth | Ongoing |
+| 5. Adoption & Ecosystem | Real-world pilots + community growth | TBD |
 
 ## Background Reading
 
-- [Traditional SaaS Is Dead. It Just Doesn't Know It Yet.](link-to-substack-part-1) — Why the architecture needs to change
-- [The Designer's Role Isn't Dying. It's Splitting Into Three.](link-to-substack-part-2) — The HCI → ACI → HAI framework
+- [Traditional SaaS Is Dead. It Just Doesn't Know It Yet.](https://theproducttown.substack.com/p/traditional-saas-is-dead-it-just) — Why the architecture needs to change
+- [The Designer's Role Isn't Dying. It's Splitting Into Three.](https://theproducttown.substack.com/p/the-designers-role-isnt-dying-its) — The HCI → ACI → HAI framework
 
 ## License
 
