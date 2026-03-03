@@ -62,7 +62,7 @@ We're in Phase 1 — validating, challenging, and refining the primitive taxonom
 ### How to Contribute
 
 1. **Read the [primitives spec](./docs/primitives.md)** and open issues for what's missing, wrong, or redundant
-2. **Join the discussion** in [GitHub Discussions](../../discussions)
+2. **Join the discussion** in [GitHub Discussions](https://github.com/kamesh231/cowork-protocol/discussions/1)
 3. **Attend a workshop** — we're running 90-min sessions on each primitive category
 4. **Share real-world examples** — where have you seen human-agent collaboration break in production?
 
