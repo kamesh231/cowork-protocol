@@ -40,7 +40,7 @@ We've identified six primitive categories with 18 primitives total. Each is a dr
 | **Communication** | Confidence Signal, Reasoning Trace, Intent Declaration |
 | **Observability** | Action Attribution, Collaboration Timeline, Intervention Map |
 
-📄 **[Full primitives specification →](./docs/primitives.md)**
+📄 **[Full primitives specification →](https://github.com/kamesh231/cowork-protocol/blob/main/docs/Primitives.md)**
 
 ## Why Not Just Use MCP / A2A?
 
@@ -61,7 +61,7 @@ We're in Phase 1 — validating, challenging, and refining the primitive taxonom
 
 ### How to Contribute
 
-1. **Read the [primitives spec](./docs/primitives.md)** and open issues for what's missing, wrong, or redundant
+1. **Read the [primitives spec](https://github.com/kamesh231/cowork-protocol/blob/main/docs/Primitives.md)** and open issues for what's missing, wrong, or redundant
 2. **Join the discussion** in [GitHub Discussions](https://github.com/kamesh231/cowork-protocol/discussions/1)
 3. **Attend a workshop** — we're running 90-min sessions on each primitive category
 4. **Share real-world examples** — where have you seen human-agent collaboration break in production?
