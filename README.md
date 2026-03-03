@@ -20,11 +20,11 @@ Within 3 years, every B2B SaaS product will need human-agent collaboration. An o
 
 Traditional software design assumed one interaction model: **HCI** (Human-Computer Interaction).
 
-Two new zones are emerging:
+Three new zones are emerging:
 
-- **ACI** (Agent-Computer Interaction) — How AI agents navigate, act, and operate inside software
+- **ACI** (Agent-Computer Interaction) — How AI agents navigate, act, and operate inside software. 
 - **HAI** (Human-Agent Interaction) — How humans and agents collaborate: trust, handoffs, feedback, shared context
-
+- **AAI** (Agent-Agent Interaction) — How agents and agents collaborate: trust, handoffs, feedback, shared context. [Google is already working on this](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 COWORK defines the primitives, patterns, and specifications for all three zones.
 
 ## Primitives (Draft v0.1)
