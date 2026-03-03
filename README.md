@@ -27,7 +27,7 @@ Three new zones are emerging:
 - **AAI** (Agent-Agent Interaction) — How agents and agents collaborate: trust, handoffs, feedback, shared context. [Google is already working on this](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 COWORK defines the primitives, patterns, and specifications for all three zones.
 
-## Primitives (Draft v0.1)
+## Primitives for HAI (Draft v0.1)
 
 We've identified six primitive categories with 18 primitives total. Each is a draft meant to be challenged and refined.
 
