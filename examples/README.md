@@ -12,6 +12,7 @@ The COWORK Protocol isn't built from theory. It's built from production pain. Ev
 |---------|--------|----------------------|
 | [CRM Data Integrity](./crm-data-integrity.md) | CRM / RevOps | Intent Declaration, Action Scope, Action Attribution, Trust Threshold |
 | [Support Handoff Failures](./support-handoffs.md) | Customer Support | Context Packet, Escalation Trigger, Trust Score, Confidence Signal |
+| [Cross-Environment Context Loss](./cross-environment-context-loss.md) | Multi-Agent Orchestration | Context Packet, Handoff Mode, Collaboration Timeline, Action Attribution |
 
 ## Contributing an Example
 

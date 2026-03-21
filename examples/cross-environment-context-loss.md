@@ -44,13 +44,29 @@ These worked until they didn't. The em-dash incident was the visible failure of 
 | Collaboration Timeline | No | No shared view of events across both environments over time. Individual session logs existed; a unified cross-environment reconstruction did not. |
 | Action Attribution | Partial | Files recorded changes. Decision-makers and their reasoning were recoverable only from full session transcripts — not from any structured field. Who decided what, and from what information, required archaeology. |
 
+## Impact
+
+**Rework cost:** The em-dash incident required a full revert of 80 changes across 6 articles — roughly a session's worth of work discarded. But the revert was the cheap part. The expensive part was the operator's time re-reading the modified files, comparing against originals, and determining that the changes degraded quality. Without a context packet carrying the rationale, the operator had to reverse-engineer intent from output alone.
+
+**Compounding context loss:** Cross-environment sessions regularly had 2-5 day gaps. Each gap meant the receiving environment started from scratch — re-reading files, guessing at intent, sometimes duplicating work that had already been decided against. Over a month of operation, this added up to multiple sessions of recoverable but unrecovered context. Work that should have been cumulative was often restated or re-derived.
+
+**Decision quality degradation:** The em-dash incident wasn't a data loss event — it was a decision quality failure. Claude Desktop approved changes it would have questioned if it had known *why* they were made. The missing handoff protocol meant review operated on output state rather than decision state, which reduced the review from "evaluate this decision" to "does this file look okay." That's a fundamentally lower bar.
+
+**Downstream protocol investment:** The 10-day, three-iteration fix (skill → typed protocol → enforcement skill) was itself a cost of the missing primitives. In a system with defined handoff modes from the start, the coordination layer would have been configuration, not invention. The protocol that emerged works — but it was built reactively from failure, not proactively from specification.
+
+**Broader implication:** This was a single-operator, two-agent system. The coordination failures appeared at n=1. In a team environment with multiple humans and multiple agents, the same missing primitives would compound: more handoffs, more gaps, more decisions made without context. The cost scales with the number of agent boundaries in the workflow, not with the complexity of the agents themselves.
+
 ## The Fix
 
 Three iterations over 10 days:
 
 **Iteration 1 — `/cowork` skill (Feb 16):** Automated folder scanning replaced manual path navigation. Reduced friction at session start. Did not address the structural problem — the receiving environment still had no structured context payload.
 
-**Iteration 2 — `PROTOCOL.md` (Feb 23-26):** Typed message protocol. Six message types: `handoff` (work transfer), `response` (reply to handoff), `ack` (acknowledgment), `directive` (cross-environment instruction), `spec` (reference document), `status` (update without action required). Required frontmatter fields on every message: `type`, `from`, `to`, `created`, `status`. Thread lifecycle defined: open → response → archive. Naming conventions enforced by convention.
+**Iteration 2 — `PROTOCOL.md` (Feb 23-26):** A typed message protocol was defined with:
+- **Six message types:** `handoff` (work transfer), `response` (reply to handoff), `ack` (acknowledgment), `directive` (cross-environment instruction), `spec` (reference document), `status` (update without action required).
+- **Required frontmatter fields:** `type`, `from`, `to`, `created`, `status`.
+- **Thread lifecycle:** open → response → archive.
+- **Naming conventions:** Enforced by convention.
 
 **Iteration 3 — `/exchange` skill (Feb 26):** A PROTOCOL.md-aware skill that routes messages by type and enforces the protocol at both ends — scan for pending messages at session start, route by type, write structured responses, archive closed threads.
 
